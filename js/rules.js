@@ -7,8 +7,9 @@
 // DISTANZA DA PERCORRERE
 var kmTratta = parseInt( prompt('Inserire la distanza da percorrere in Km') );
 
-if (isNaN(kmTratta) === true )  {
-  alert('I dati inseriti non sono corretti, aggiornare la pagina ed inserirli correttamente');
+if (isNaN(kmTratta) === true) {
+    do kmTratta = parseInt( prompt('I dati inseriti non sono corretti, si prega di reinserirli') );
+    while (isNaN(kmTratta) === true );
 }
 
 document.getElementById('km-tratta').innerHTML = kmTratta + 'Km';
@@ -19,8 +20,9 @@ var costoTratta = parseInt(kmTratta * 0.21);
 // ETÁ DEL PASSEGGERO
 var anniUtente = parseInt( prompt('Inserire la propria etá') );
 
-if (isNaN(anniUtente) === true )  {
-  alert('I dati inseriti non sono corretti, aggiornare la pagina ed inserirli correttamente');
+if (isNaN(anniUtente) === true) {
+    do anniUtente = parseInt( prompt('I dati inseriti non sono corretti, si prega di reinserirli') );
+    while (isNaN(anniUtente) === true);
 }
 
 document.getElementById('anni').innerHTML = anniUtente
