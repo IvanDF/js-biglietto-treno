@@ -3,3 +3,79 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  color: #224;
+  background: #999;
+  height: 100vh;
+  font-family: monospace;
+  justify-content: center;
+  display: flex;
+}
+
+
+h1 {
+  padding-top: 60px;
+}
+
+p {
+  padding-top: 25px;
+  font-size: 24px;
+}
+
+.biglietto {
+  display: flex;
+  flex-direction: row;
+  align-self: center ;
+  height: 500px;
+  width: 1300px;
+  max-width: 100%;
+  background: #cce;
+  border-radius: 20px;
+}
+
+.banda {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 200px;
+}
+
+.barra {
+  align-self: flex-end;
+  width: 100px;
+  height: 100%;
+  background: #224;
+}
+
+.contenuti {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.dati {
+  display: flex;
+  height: 50%;
+}
+
+.km,
+.eta {
+  padding-top: 60px;
+  width: 60%;
+}
+
+.costo p{
+  padding-top: 0;
+  margin-bottom: 20px;
+}
+
+.costo .btn {
+  padding: 10px 20px;
+  background: #224;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.costo a {
+  text-decoration: none;
+  color: #222;
+}
