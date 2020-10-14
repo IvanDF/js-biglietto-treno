@@ -5,30 +5,42 @@
 }
 
 body {
+  position: relative;
+  border: solid #cce 10px;
   color: #224;
-  background: #999;
+  background: url('../bg.jpg');
+  background-position: center;
+  background-size: cover;
   height: 100vh;
   font-family: monospace;
   justify-content: center;
   display: flex;
 }
 
+.filter {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #224;
+  opacity: .3 ;
+}
 
 h1 {
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 p {
-  padding-top: 25px;
-  font-size: 24px;
+  padding-top: 15px;
+  font-size: 22px;
 }
 
 .biglietto {
+  opacity: .9;
   display: flex;
   flex-direction: row;
   align-self: center ;
-  height: 500px;
-  width: 1300px;
+  height: 400px;
+  width: 1200px;
   max-width: 100%;
   background: #cce;
   border-radius: 20px;

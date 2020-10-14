@@ -5,7 +5,7 @@
 **/
 
 // DISTANZA DA PERCORRERE
-var kmTratta = parseInt( prompt('Distanda da percorrere') );
+var kmTratta = parseInt( prompt('Inserire la distanza da percorrere in Km') );
 
 if (isNaN(kmTratta) === true )  {
   alert('I dati inseriti non sono corretti, aggiornare la pagine ed inserire correttamente i dati');
@@ -17,7 +17,7 @@ document.getElementById('km-tratta').innerHTML = kmTratta + 'Km';
 var costoTratta = parseInt(kmTratta * 0.21);
 
 // ETÁ DEL PASSEGGERO
-var anniUtente = parseInt( prompt('Quanti anni hai') );
+var anniUtente = parseInt( prompt('Inserire la propria etá') );
 
 if (isNaN(kmTratta) === true )  {
   alert('I dati inseriti non sono corretti, aggiornare la pagine ed inserire correttamente i dati');
@@ -39,7 +39,5 @@ if (anniUtente < 18) {
 }
 
 // RISULTATO FINALE
-var prezzoFinale = costoTratta.toFixed(2) + '€';
-
-console.log(prezzoFinale);
+var prezzoFinale = costoTratta.toFixed(2) + ' €';
 document.getElementById('costo-tot').innerHTML = prezzoFinale;
